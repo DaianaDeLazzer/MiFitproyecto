@@ -38,7 +38,13 @@ li a{
     filter: grayscale(100%);
     scale: 1.03;
    transition: all 1s ease;
-} 
+}
+
+#foto1 img:not(:hover){
+    filter: grayscale(0%);
+    scale: 1;
+   transition: all 0.5s ease;
+}
 
 #Circulo{
     grid-area: uno;
