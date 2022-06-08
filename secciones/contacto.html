@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Mi.Fit.Entrenamientos</title>
 </head>
+
 <body>
     <header>
         <h1>Mi.Fit.Entrenamientos</h1>
@@ -22,38 +24,38 @@
         </nav>
     </header>
     <section id="fotitos" class="productosflex">
-   <div id="grilla2">
-       <img src="../img/pesarusa.jpg" alt="" id="foto2">
-   </div>
+        <div id="grilla2">
+            <img src="../img/pesarusa.jpg" alt="" id="foto2">
+            <form>
+                <label for="nombre_apellido">Nombre y Apellido:</label>
+                <input type="text" name="nombre_apellido" /> <br>
+                <label type="edad"> Ingrese edad</label>
+                <input type="number" name="edad" /> <br>
 
-    <form>
-        <label for="nombre_apellido">Nombre y Apellido:</label>
-        <input type="text" name="nombre_apellido"/> <br>
-        <label type="edad"> Ingrese edad</label>
-        <input type="number" name="edad"/> <br>
+                <input type="submit" value="Enviar formulario" />
+                <input type="reset" value="Limpiar formulario" />
+                <input type="button" value="Sin acciones" />
 
-        <input type="submit" value="Enviar formulario"/> 
-        <input type="reset" value="Limpiar formulario"/> 
-        <input type="button" value="Sin acciones"/> 
+                <div>Mujer</div>
+                <input type="radio" name="sexo" value="mujer" />
+                <div>Hombre</div>
+                <input type="radio" name="sexo" value="Hombre" />
 
-        <div>Mujer</div>
-        <input type="radio" name="sexo" value="mujer" />
-        <div>Hombre</div>
-        <input type="radio" name="sexo" value="Hombre" />
+                <select name="talles">
 
-        <select name="talles">          
-            
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-        </select>
-    </form>
-    <img src="../img/barrarosa.jpg" alt="" id="foto3">
-</section>
-   
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                </select>
+            </form>
+            <img src="../img/barrarosa.jpg" alt="" id="foto3">
+        </div>
+    </section>
+
     <footer>
         <p>Todos los derechos reservados</p>
 
-    </footer> 
+    </footer>
 </body>
+
 </html>

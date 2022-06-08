@@ -1,52 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     margin: 0;
     width: 100%;
-    background-color: rgb(255, 109, 194);
-   
+    background: rgb(163, 42, 112);
+    background: linear-gradient(90deg, rgba(163, 42, 112, 1) 0%, rgba(176, 74, 133, 1) 28%, rgba(255, 109, 194, 1) 100%);
 }
 
-h1{
+h1 {
     color: aliceblue;
     text-align: center;
     font-size: 20px;
 }
 
-ul{
+ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-  
+
 }
 
-li a{
+li a {
     color: aliceblue;
     font-size: 15px;
     text-decoration: none;
 }
 
-#foto1 img{
+li a:hover{
+    color: rgb(149, 21, 235);
+    text-decoration: underline;
+    transition: all 0.2s ease-out;
+}
+
+#foto1 img {
     width: 100%;
     height: auto;
 }
 
-#foto1 img:hover{
+#foto1 img:hover {
     filter: grayscale(100%);
     scale: 1.03;
-   transition: all 1s ease;
+    transition: all 1s ease;
 }
 
-#foto1 img:not(:hover){
+#foto1 img:not(:hover) {
     filter: grayscale(0%);
     scale: 1;
-   transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-#Circulo{
+#Circulo {
     grid-area: uno;
     background-color: rgb(255, 109, 194);
 }
@@ -55,34 +61,35 @@ li a{
     grid-area: dos;
     background-color: rgb(255, 139, 207);
 }
-#Cruz{
+
+#Cruz {
     grid-area: tres;
     background-color: rgb(255, 215, 238);
 
 }
 
-#Corazon{
+#Corazon {
     grid-area: cuatro;
     background-color: rgb(255, 215, 238);
 
 }
 
-#grilla{
+#grilla {
     display: grid;
-    grid-template-areas: 
-    "uno"
-    "dos"
-    "tres"
-    "cuatro"
+    grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
     ;
 
     grid-template-columns: 100%;
     grid-template-rows: 300px 300px 300px 300px;
     gap: 5px;
-    
+
 }
 
-footer{
+footer {
     height: 15%;
     color: aliceblue;
     background-color: rgb(0, 0, 0);
@@ -90,7 +97,7 @@ footer{
 }
 
 footer p {
-    padding:8px;
+    padding: 8px;
     font-size: 14px;
     margin: 0;
     background-color: rgb(255, 109, 194);
@@ -98,64 +105,69 @@ footer p {
 
 form {
     grid-area: formulario;
- 
+
 
 }
 
 #foto2 {
     grid-area: fotoizqformulario;
-    background-color: rgb(255, 109, 194);
-   
-}
-#foto3 {
-    grid-area: fotoderformulario;
-    background-color: rgb(255, 109, 194);
-   
+    width: 100%;
+    height: 100%;
+
 }
 
-#grilla2{
+#foto3 {
+    grid-area: fotoderformulario;
+    width: 100%;
+    height: 100%;
+}
+
+#grilla2 {
     display: grid;
-    grid-template-areas: 
-    "fotoizqformulario"
-    "formulario"
-    "fotoderformulario";
+    grid-template-areas:
+        "fotoizqformulario"
+        "formulario"
+        "fotoderformulario";
 
     grid-template-columns: 100%;
     grid-template-rows: 250px auto 250px;
-    gap:5px;
+    gap: 5px;
 
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
-    #grilla{
+    #grilla {
         display: grid;
-        grid-template-areas: 
-        "uno uno tres"
-        "dos dos tres"
-        "dos dos tres"
-        "cuatro cuatro cuatro";
+        grid-template-areas:
+            "uno uno tres"
+            "dos dos tres"
+            "dos dos tres"
+            "cuatro cuatro cuatro";
         grid-template-columns: 10% auto 100px;
         grid-template-rows: 600px 125px 125px 300px;
         gap: 10px;
     }
 
 
-    #grilla2{
+    #grilla2 {
         display: grid;
-        grid-template-areas: 
-        "fotoizq formulario formulario fotoder formulario";
-    
-        grid-template-columns: 250px auto 250px;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "fotoizqformulario formulario fotoderformulario";
+
+        grid-template-columns: auto;
         grid-template-rows: auto;
-        gap:5px;
+        gap: 5px;
     }
-    .productosflex{
+
+    .productosflex {
         display: flex;
         flex-direction: row;
-    
-}
+
+    }
 
 
 }
