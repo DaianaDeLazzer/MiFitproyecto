@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0;
+    width: 100%;
+    background-color: rgb(255, 109, 194);
+   
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  
+}
+
+li a{
+    color: aliceblue;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#foto1 img{
+    width: 100%;
+    height: auto;
+}
+
+#foto1 img:hover{
+    filter: grayscale(100%);
+    scale: 1.03;
+   transition: all 1s ease;
+} 
+
+#Circulo{
+    grid-area: uno;
+    background-color: rgb(255, 109, 194);
+}
+
+#Rayas {
+    grid-area: dos;
+    background-color: rgb(255, 139, 207);
+}
+#Cruz{
+    grid-area: tres;
+    background-color: rgb(255, 215, 238);
+
+}
+
+#Corazon{
+    grid-area: cuatro;
+    background-color: rgb(255, 215, 238);
+
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "tres"
+    "cuatro"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 5px;
+    
+}
+
+footer{
+    height: 15%;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+footer p {
+    padding:8px;
+    font-size: 14px;
+    margin: 0;
+    background-color: rgb(255, 109, 194);
+}
+
+form {
+    grid-area: formulario;
+ 
+
+}
+
+#foto2 {
+    grid-area: fotoizqformulario;
+    background-color: rgb(255, 109, 194);
+   
+}
+#foto3 {
+    grid-area: fotoderformulario;
+    background-color: rgb(255, 109, 194);
+   
+}
+
+#grilla2{
+    display: grid;
+    grid-template-areas: 
+    "fotoizqformulario"
+    "formulario"
+    "fotoderformulario";
+
+    grid-template-columns: 100%;
+    grid-template-rows: 250px auto 250px;
+    gap:5px;
+
+
+}
+
+@media (min-width: 1024px){
+
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "uno uno tres"
+        "dos dos tres"
+        "dos dos tres"
+        "cuatro cuatro cuatro";
+        grid-template-columns: 10% auto 100px;
+        grid-template-rows: 600px 125px 125px 300px;
+        gap: 10px;
+    }
+
+
+    #grilla2{
+        display: grid;
+        grid-template-areas: 
+        "fotoizq formulario formulario fotoder formulario";
+    
+        grid-template-columns: 250px auto 250px;
+        grid-template-rows: auto;
+        gap:5px;
+    }
+    .productosflex{
+        display: flex;
+        flex-direction: row;
+    
+}
+
+
+}
