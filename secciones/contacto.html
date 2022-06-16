@@ -42,30 +42,22 @@
     </header>
     <section id="fotitos" class="productosflex">
         <div id="grilla2">
-            <img src="../img/pesarusa.jpg" alt="" id="foto2">
+            <img src="../img/blancoynegro.jpg" alt="" id="foto2">
             <form>
-                <label for="nombre_apellido">Nombre y Apellido:</label>
-                <input type="text" name="nombre_apellido" /> <br>
-                <label type="edad"> Ingrese edad</label>
-                <input type="number" name="edad" /> <br>
-
-                <input type="submit" value="Enviar formulario" />
-                <input type="reset" value="Limpiar formulario" />
-                <input type="button" value="Sin acciones" />
-
-                <div>Mujer</div>
-                <input type="radio" name="sexo" value="mujer" />
-                <div>Hombre</div>
-                <input type="radio" name="sexo" value="Hombre" />
-
-                <select name="talles">
-
-                    <option value="L">Large</option>
-                    <option value="M">Medium</option>
-                    <option value="S">Small</option>
-                </select>
-            </form>
-            <img src="../img/barrarosa.jpg" alt="" id="foto3">
+                <div class="mb-3">
+                  <label for="Nombre" class="form-label"> Nombre</label>
+                  <input type="email" class="form-control" id="InputNombre">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="Mail" class="form-label">Mail</label>
+                  <input type="InputMail" class="form-control" id="FormInputMail">
+                </div>
+                <div class="mb-3">
+                    <textarea name="mensajecontacto" rows="10" cols="90">Escribime tu mensaje aca!</textarea>
+                </div>
+                <button type="Enviar" class="btn btn-primary">Enviar</button>
+              </form>
         </div>
     </section>
 

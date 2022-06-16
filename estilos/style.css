@@ -1,212 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Hind:wght@300&family=Mukta:wght@500&family=Quicksand&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    margin: 0;
-    width: 100%;
-    background: rgb(163, 42, 112);
-    background: linear-gradient(90deg, rgba(163, 42, 112, 1) 0%, rgba(176, 74, 133, 1) 28%, rgba(255, 109, 194, 1) 100%);
+  margin: 0;
+  width: 100%;
+  background: rgb(163, 42, 112);
+  background: linear-gradient(90deg, rgb(163, 42, 112) 0%, rgb(176, 74, 133) 28%, rgb(255, 109, 194) 100%);
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    text-align: center;
-    font-size: 20px;
+  margin: 0;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
 }
 
 h5 {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
+  font-family: "Crimson Text", serif;
+  font-size: 30px;
 }
-
 h5:hover {
-    color: rgb(255, 11, 182) !important;
-    
-    transition: all 0.2s ease-out;
+  color: rgb(255, 11, 182) !important;
+  transition: all 0.2s ease-out;
 }
 
 .violet {
-    background: linear-gradient(90deg, rgba(163, 42, 112, 1) 0%, rgba(176, 74, 133, 1) 28%, rgba(255, 109, 194, 1) 100%);
+  background: linear-gradient(90deg, rgb(163, 42, 112) 0%, rgb(176, 74, 133) 28%, rgb(255, 109, 194) 100%);
 }
 
 h6 {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: "Crimson Text", serif;
+}
+h6:hover {
+  color: rgb(255, 11, 182) !important;
+  transition: all 0.2s ease-out;
 }
 
 a {
-    text-decoration: none;
-}
-
-h6:hover {
-    color: rgb(255, 11, 182) !important;
-    transition: all 0.2s ease-out;
+  text-decoration: none;
 }
 
 #foto1 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 #foto1 img:hover {
-    filter: grayscale(100%);
-    scale: 1.03;
-    transition: all 1s ease;
+  filter: grayscale(100%);
+  scale: 1.03;
+  transition: all 1s ease;
 }
-
-#foto1 img:not(:hover) {
-    filter: grayscale(0%);
-    scale: 1;
-    transition: all 0.5s ease;
+#foto1 img:hover:not(:hover) {
+  filter: grayscale(0%);
+  scale: 1;
+  transition: all 0.5s ease;
 }
 
 #Circulo {
-    grid-area: uno;
-    background: linear-gradient(90deg, rgba(163, 42, 112, 1) 0%, rgba(176, 74, 133, 1) 28%, rgba(255, 109, 194, 1) 100%);
-    display: inline-flex;
+  grid-area: uno;
+  background: linear-gradient(90deg, rgb(163, 42, 112) 0%, rgb(176, 74, 133) 28%, rgb(255, 109, 194) 100%);
+  display: inline-flex;
 }
-#rutinasemanal{
-    margin-top: 100px;
-    margin-left: 50px;
-    color: aliceblue;
-}
-#challengeimg {
-    margin: 50px;
-    width: 500px;
-    height: 500px;
-    /* background-color: aliceblue; */
-    background-image: url("../img/blancoynegro.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 
+#rutina {
+  margin-top: 100px;
+  margin-left: 50px;
+  color: aliceblue;
+}
+
+#challengeimg {
+  margin: 50px;
+  width: 500px;
+  height: 500px;
+  /* background-color: aliceblue; */
+  background-image: url("../img/blancoynegro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #Rayas {
-    grid-area: dos;
-    /* background-color: rgb(255, 139, 207); */
-    display: inline-flex;
-    justify-content: space-evenly;
-}
-
-.card {
-    background-color:rgb(255, 139, 207) ;
-    margin: 10px;
+  grid-area: dos;
+  /* background-color: rgb(255, 139, 207); */
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
 #Cruz {
-    grid-area: tres;
-    /* background-color: rgb(255, 215, 238); */
-    background-image: url("../img/Fondo.jpg") ;
-    background-size: cover;
-
+  grid-area: tres;
+  /* background-color: rgb(255, 215, 238); */
+  background-image: url("../img/Fondo.jpg");
+  background-size: cover;
 }
 
-
-
 #grilla {
-    display: grid;
-    grid-template-areas:
-        "uno"
-        "dos"
-        "tres"
-    ;
-
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto 450px;
-    gap: 5px;
-
+  display: grid;
+  grid-template-areas: "uno" "dos" "tres";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto 450px;
+  gap: 5px;
 }
 
 footer {
-    height: 15%;
-    color: aliceblue;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
+  height: 15%;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
 }
-
 footer p {
-    padding: 8px;
-    font-size: 14px;
-    margin: 0;
-    background-color: rgb(255, 109, 194);
+  padding: 8px;
+  font-size: 14px;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(163, 42, 112) 0%, rgb(176, 74, 133) 28%, rgb(255, 109, 194) 100%);
 }
 
 form {
-    grid-area: formulario;
-
-
+  grid-area: formulario;
 }
 
 #foto2 {
-    grid-area: fotoizqformulario;
-    width: 100%;
-    height: 100%;
-
+  grid-area: fotoizqformulario;
+  width: 75%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-#foto3 {
-    grid-area: fotoderformulario;
-    width: 100%;
-    height: 100%;
-}
 #fotoprincipal {
-    grid-area: fotoderformulario;
-    width: 100%;
-    height: 100%;
-
-
+  grid-area: fotoderformulario;
+  width: 100%;
+  height: 100%;
 }
+
 #grilla2 {
-    display: grid;
-    grid-template-areas:
-        "fotoizqformulario"
-        "formulario"
-        "fotoderformulario";
-
-    grid-template-columns: 100%;
-    grid-template-rows: 250px auto 250px;
-    gap: 5px;
-
-
+  display: grid;
+  grid-template-areas: "fotoizqformulario" "formulario";
+  grid-template-columns: 100%;
+  grid-template-rows: 250px auto;
+  gap: 5px;
+}
+#grilla2 .productosflex {
+  display: flex;
+  flex-direction: row;
 }
 
-
+#rutina h2 {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 75px;
+}
+#rutina h2:hover {
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-out;
+}
+#rutina li {
+  text-align: left;
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+}
 
 @media (min-width: 1024px) {
-
-    #grilla {
-        display: grid;
-        grid-template-areas:
-            "uno uno tres"
-            "dos dos tres"
-            "dos dos tres"
-;
-        grid-template-columns: 10% auto 100px;
-        grid-template-rows: 600px auto auto ;
-        gap: 10px;
-    }
-
-
-    #grilla2 {
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-areas:
-            "fotoizqformulario formulario fotoderformulario";
-
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        gap: 5px;
-    }
-
-    .productosflex {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-
+  #rutina h2 {
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-size: 100px;
+  }
+  #rutina h2:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-out;
+  }
+  #rutina li {
+    text-align: left;
+    font-family: "Crimson Text", serif;
+    font-size: 25px;
+  }
 }
+.card {
+  background-color: rgb(255, 139, 207);
+  margin: 10px;
+}
+
+.btn {
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "uno uno tres" "dos dos tres" "dos dos tres";
+    grid-template-columns: 10% auto 100px;
+    grid-template-rows: 600px auto auto;
+    gap: 10px;
+  }
+
+  #grilla2 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "fotoizqformulario formulario fotoderformulario";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */

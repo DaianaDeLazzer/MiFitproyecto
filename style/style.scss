@@ -1,0 +1,47 @@
+@import "variableglobal";
+@import "generales";
+@import "rutina";
+
+
+
+.card {
+    background-color:rgb(255, 139, 207) ;
+    margin: 10px;
+}
+.btn {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    
+}
+
+
+
+@media (min-width: 1024px) {
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+            "uno uno tres"
+            "dos dos tres"
+            "dos dos tres";
+        grid-template-columns: 10% auto 100px;
+        grid-template-rows: 600px auto auto ;
+        gap: 10px;
+    }
+
+
+    #grilla2 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "fotoizqformulario formulario fotoderformulario";
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+   }
+
+
